@@ -1,11 +1,10 @@
 .form-box{
     width: 500px;
     height: 650px;
-    border: 2px solid black;
+    // border: 2px solid black;
     margin: 5% 30%;
     padding: 20px;
     .form{
-        height: 100vh;
         padding: 20px;
         background-color: aliceblue;
         margin: 20px;
@@ -16,17 +15,19 @@
         h1{
             text-align: center;
             letter-spacing: 10px;
-            margin: 20px;
+            margin: 30px;
         }
         .MuiInputBase-root{
             margin-bottom: 30px;
             width: 100%;
+            padding: 5px;
         }
         input{
             font-size: 20px;
         }
         button{
             font-size: 20px;
+            margin: 50px;
             &:hover{
                 font-weight: 600;
             }
