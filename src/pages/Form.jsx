@@ -23,6 +23,7 @@ const Form = () => {
         swal("Good job!", "You clicked the button!", "success");
       }
     })
+   
   }
   const {name, surname, password} = userData;
   return (
@@ -32,8 +33,8 @@ const Form = () => {
             <h1>REGISTER</h1>
             <TextField id="standard-basic" label="Name" variant="standard" onChange={onHandleChange} name="name"/>
             <TextField id="standard-basic" label="Surname" variant="standard" onChange={onHandleChange} name="surname"/>
-            <TextField id="standard-basic" label="Password" variant="standard" type="password" onClick={onHandleChange} name="password"/>
-            <Button variant="contained" color="success" onClick={onHandleClick} disabled={(userData.name=="" || userData.surname=="" || userData.password.length <= 8 )} >register</Button>
+            <TextField id="standard-basic" label="Password" variant="standard" type="password" onChange={onHandleChange} name="password"/>
+            <Button variant="contained" color="success" onClick={onHandleClick} disabled={userData.name=="" || userData.surname=="" ||userData.password.length <8 } >register</Button>
         </div>
       </div>
     </div>

@@ -27,7 +27,7 @@ const About = () => {
         setData(res.data);
     })
     },[]);
-    console.log(data)
+    // console.log(data)
 
   return (
     <div className='container'>
